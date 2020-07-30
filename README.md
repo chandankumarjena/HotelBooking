@@ -1,15 +1,15 @@
 # HotelBooking
 This applicartion is a rest api service used to book the hotel.
 Objective of application:-To Book a Hotel with hotel, customer and rooms details.
-Steps to execute:-
+STEPS TO RUN:-
    required software/technology - Eclipse, Spring Boot, Java8, mysql, postman
    steps:- 1. configure all the above software and technology
    	   2. download the project from the GITHUB and configure in the local machine.
 	   3. create a database and configure the username and password.
 	   4. start in local machine using eclipse and try to make request of rest POST call using POSTMAN
 	   5. check according to the below json format.
-	   
-JSON Structure:-
+POST URI:- localhost:8080/api/placeOrders
+JSON SRUCTURE:-
 Case 1:- for successfully placing orders return 201
 {
 		"hotelName":"Pearl Bridge",
@@ -76,7 +76,7 @@ Case 3:- validation when email is invalid return 400
 		]
 }
 
-Case 3:- validation when roomName is null return 400
+Case 4:- validation when roomName is null return 400
 
 {
 		"hotelName": null,
